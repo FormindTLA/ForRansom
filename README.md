@@ -1,0 +1,2 @@
+# ForRansom
+Generic Ransomware
